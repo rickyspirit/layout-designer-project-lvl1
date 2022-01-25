@@ -9,6 +9,59 @@
   src: url(assets/fonts/OpenSans-Regular.ttf);
 }
 
+.white-background {
+  background-color: #fff;
+}
+
+.brown-background {
+  background-color: #B09A81;
+}
+
+.image-background {
+  background-image: url(../assets/background.png);
+}
+
+.text-black {
+  color: #2A2626;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.primary-dark {
+  color: #42413C;
+}
+
+.regular-text {
+  font-family: 'OpenSans-Regular';
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.rubric-title {
+  font-family: 'Neucha-Regular';
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.rubric-header {
+  font-family: 'Neucha-Regular';
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.rubric-lead {
+  font-family: 'Neucha-Regular';
+  font-size: 34px;
+  line-height: 1.2em;
+}
+
+section {
+  max-width: 1110px;
+  margin: 100px auto;
+}
+
 .hello {
   display: block;
 
