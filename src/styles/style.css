@@ -1,12 +1,12 @@
 /** CSS STYLE **/
 @font-face {
   font-family: 'Neucha-Regular';
-  src: url(assets/fonts/Neucha-Regular.ttf);
+  src: url(../assets/fonts/Neucha-Regular.ttf);
 }
 
 @font-face {
   font-family: 'OpenSans-Regular';
-  src: url(assets/fonts/OpenSans-Regular.ttf);
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
 
 .white-background {
@@ -15,6 +15,14 @@
 
 .brown-background {
   background-color: #B09A81;
+}
+
+.primary-dark-background {
+  background-color: #42413C;
+}
+
+.light-background {
+  background-color: #F5F4F0;
 }
 
 .image-background {
@@ -29,37 +37,87 @@
   color: #FFFFFF;
 }
 
+.text-grey {
+  color: #D7CCC0;
+}
+
+.text-orange {
+  color: #FE8A02;
+}
+
 .primary-dark {
   color: #42413C;
 }
 
+h1 {
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 72px;
+  line-height: 1.2em;
+}
+
 .regular-text {
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 16px;
   line-height: 1.6em;
 }
 
 .rubric-title {
-  font-family: 'Neucha-Regular';
+  font-family: 'Neucha-Regular', sans-serif;
   font-size: 24px;
   line-height: 28.8px;
 }
 
 .rubric-header {
-  font-family: 'Neucha-Regular';
+  font-family: 'Neucha-Regular', sans-serif;
   font-size: 60px;
   line-height: 1.2em;
 }
 
 .rubric-lead {
-  font-family: 'Neucha-Regular';
+  font-family: 'Neucha-Regular', sans-serif;
   font-size: 34px;
   line-height: 1.2em;
 }
 
-section {
+.size-64px-neucha {
+  font-family: 'Neucha-Regular', sans-serif;;
+  font-size: 64px;
+}
+
+.shadow {
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.block {
+  display: inline-block;
+
+  margin: 20px 30px;
+
+  width: 350px;
+  height: 323px;
+}
+
+.content-part {
+  display: block;
   max-width: 1110px;
   margin: 100px auto;
+}
+
+button {
+  margin: 11px 23px;
+
+  position: absolute;
+
+  width: 148px;
+  height: 49px;
+  left: 735px;
+  top: 765px;
+
+  font-family: 'OpenSans-Regular', sans-serif;
+  color: #fff;
+
+  border: none;
+  background: #FE8A02;
 }
 
 .hello {
