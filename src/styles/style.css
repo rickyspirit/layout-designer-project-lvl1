@@ -9,24 +9,67 @@
   src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
 
+section {
+  position: relative;
+  
+  display: block;
+  width: 100vw;
+  height: 914px;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .white-background {
   background-color: #fff;
+
+  width: 100vw;
+}
+
+.white-background::before {
+  content: url(../assets/background.png);
+
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 914px;
+}
+
+.brown-background::before {
+  content: url(../assets/background.png);
+
+  opacity: 0.1;
+  position: absolute;
+  height: 914px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .brown-background {
   background-color: #B09A81;
+
+  width: 100vw;
 }
 
 .primary-dark-background {
   background-color: #42413C;
+  position: relative;
+  top: -100px;
+
+  width: 100vw;
 }
 
 .light-background {
   background-color: #F5F4F0;
+
+  width: 100%;
 }
 
-.image-background {
-  background-image: url(../assets/background.png);
+.no-image-background {
+  background-color: #fff;
+
+  width: 100%;
 }
 
 .text-black {
@@ -47,12 +90,6 @@
 
 .primary-dark {
   color: #42413C;
-}
-
-h1 {
-  font-family: 'Neucha-Regular', sans-serif;
-  font-size: 72px;
-  line-height: 1.2em;
 }
 
 .regular-text {
@@ -79,32 +116,143 @@ h1 {
   line-height: 1.2em;
 }
 
-.size-64px-neucha {
-  font-family: 'Neucha-Regular', sans-serif;;
-  font-size: 64px;
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  left: 261px;
+  top: 329px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  z-index: 2;
 }
 
 .shadow {
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.block {
-  display: inline-block;
-
-  margin: 20px 30px;
-
+.card {
   width: 350px;
   height: 323px;
+
+  margin-top: 20px;
+  margin-right: 30px;
+  padding: 24px;
+
+  background-color: #F5F4F0;
+}
+
+.fake-card {
+  width: 350px;
+  height: 323px;
+
+  padding: 24px;
+
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 52px;
+  line-height: 1.2em;
+
+  margin: 20px 30px 0 0;
+}
+
+.card:hover {
+  background-color: #FE8A02;
+}
+
+.card-number {
+  font-family: 'Neucha-Regular', sans-serif;;
+  font-size: 64px;
+  line-height: 1;
+
+  margin: 0 0 40px 0;
+
+  color: #42413C;
+}
+
+.card:hover .card-number {
+  color: #FFFFFF;
+}
+
+.card-header {
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 34px;
+  line-height: 1.2em;
+
+  color:#FE8A02;
+}
+
+.card:hover .card-header {
+  color: #FFFFFF;
+}
+
+.card-text {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  color: #2A2626;
+}
+
+.card:hover .card-text {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-container {
+  position: absolute;
+  top: 180px;
+  left: 165px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.header-text-1 {
+  position: absolute;
+  margin-right: 30px;
+
+  width: 540px;
+  left: 165px;
+  top: 540px;
+}
+
+.header-text-2 {
+  position: absolute;
+
+  width: 540px;
+  left: 735px;
+  top: 540px;
+}
+
+header {
+  position: relative;
+
+  height: 914px;
+}
+
+body {
+  width: 1440px;
+  margin-right: 0px;
+  margin-left: 0px;
+
+  overflow-x: hidden;
 }
 
 .content-part {
   display: block;
   max-width: 1110px;
-  margin: 100px auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 button {
-  margin: 11px 23px;
+  padding: 12px 24px;
+  margin: 0;
 
   position: absolute;
 
@@ -114,10 +262,76 @@ button {
   top: 765px;
 
   font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: bold;
   color: #fff;
 
   border: none;
   background: #FE8A02;
+}
+
+.main-pic {
+  position: absolute;
+  
+  width: 1082.81px;
+  height: 525px;
+  top: 55px;
+  left: 461px;
+
+  z-index: 100;
+}
+
+h1 {
+  position: absolute;
+
+  left: 165px;
+  top: 50px;
+
+  z-index: 200;
+
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 72px;
+  line-height: 1.2em;
+}
+
+h2 {
+  position: absolute;
+
+  text-align: center;
+  line-height: 72px;
+
+  left: 328.52px;
+  top: 100px;
+  margin: 0;
+  width: 782.96px;
+  height: 73px;
+}
+
+.header-52px {
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 52px;
+  line-height: 1.2em;
+
+  margin: 0;
+}
+
+.video-description {
+  position: absolute;
+
+  text-align: center;
+
+  top: 273px;
+  left: 165px;
+  width: 1110px;
+  height: 26px;
+
+  margin: 0;
+}
+
+.raised-section {
+  position: relative;
+  padding-top: 200px;
+
+  z-index: 1;
 }
 
 .hello {
