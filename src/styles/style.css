@@ -9,15 +9,10 @@
   src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
 
-section {
+.rubric-section {
   position: relative;
-  
-  display: block;
-  width: 100vw;
-  height: 914px;
 
-  margin-left: 0;
-  margin-right: 0;
+  padding: 100px 0 0 0;
 }
 
 .white-background {
@@ -55,7 +50,7 @@ section {
 .primary-dark-background {
   background-color: #42413C;
   position: relative;
-  top: -100px;
+  top: 100px;
 
   width: 100vw;
 }
@@ -92,6 +87,10 @@ section {
   color: #42413C;
 }
 
+.text-brown {
+  color: #B09A81;
+}
+
 .regular-text {
   font-family: 'OpenSans-Regular', sans-serif;
   font-size: 16px;
@@ -102,12 +101,7 @@ section {
   font-family: 'Neucha-Regular', sans-serif;
   font-size: 24px;
   line-height: 28.8px;
-}
-
-.rubric-header {
-  font-family: 'Neucha-Regular', sans-serif;
-  font-size: 60px;
-  line-height: 1.2em;
+  margin: 0;
 }
 
 .rubric-lead {
@@ -116,12 +110,28 @@ section {
   line-height: 1.2em;
 }
 
+.opensans-18px {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 18px;
+}
+
+.opensans-14px {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.opensans-12px {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 12px;
+}
+
 iframe {
   margin-left: auto;
   margin-right: auto;
 
   position: absolute;
-  left: 261px;
+  left: 96px;
   top: 329px;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
@@ -130,6 +140,20 @@ iframe {
 
 .shadow {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.flex-container {
+  position: absolute;
+  top: 200px;
+
+  margin-bottom: 100px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: flex-start;
 }
 
 .card {
@@ -202,14 +226,29 @@ a {
   text-decoration: none;
 }
 
-.flex-container {
-  position: absolute;
-  top: 180px;
-  left: 165px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-self: flex-start;
+.two-columns {
+  column-count: 2;
+  column-gap: 30px;
+  break-inside: avoid;
+
+  overflow: hidden;
+}
+
+.two-columns p {
+  margin: 0;
+}
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+.rubric-aside {
+  padding-left: 30px;
+}
+
+.rubric-img {
+  display: block;
+  width: 578px;
 }
 
 .header-text-1 {
@@ -217,7 +256,6 @@ a {
   margin-right: 30px;
 
   width: 540px;
-  left: 165px;
   top: 540px;
 }
 
@@ -225,7 +263,7 @@ a {
   position: absolute;
 
   width: 540px;
-  left: 735px;
+  left: 570px;
   top: 540px;
 }
 
@@ -236,30 +274,41 @@ header {
 }
 
 body {
-  width: 1440px;
-  margin-right: 0px;
-  margin-left: 0px;
+  position: relative;
+  width: 100vw;
 
   overflow-x: hidden;
+
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  
+  display: block;
+  width: 100vw;
+  height: 914px;
+  margin: 0 auto;
 }
 
 .content-part {
+  position: absolute;
+  left: 165px;
   display: block;
   max-width: 1110px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 button {
+  position: absolute;
+  left: 570px;
+  top: 765px;
+
   padding: 12px 24px;
   margin: 0;
 
-  position: absolute;
-
   width: 148px;
   height: 49px;
-  left: 735px;
-  top: 765px;
 
   font-family: 'OpenSans-Regular', sans-serif;
   font-weight: bold;
@@ -275,7 +324,7 @@ button {
   width: 1082.81px;
   height: 525px;
   top: 55px;
-  left: 461px;
+  left: 296px;
 
   z-index: 100;
 }
@@ -283,7 +332,6 @@ button {
 h1 {
   position: absolute;
 
-  left: 165px;
   top: 50px;
 
   z-index: 200;
@@ -291,19 +339,49 @@ h1 {
   font-family: 'Neucha-Regular', sans-serif;
   font-size: 72px;
   line-height: 1.2em;
+
+  white-space: nowrap;
 }
 
+
 h2 {
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 60px;
+  line-height: 1.2em;
+  margin: 0 0 30px 0;
+}
+
+.middle-header {
   position: absolute;
 
   text-align: center;
   line-height: 72px;
 
-  left: 328.52px;
   top: 100px;
-  margin: 0;
+  left: 163px;
+  margin: 0 auto;
   width: 782.96px;
   height: 73px;
+
+  font-family: 'Neucha-Regular', sans-serif;
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding: 5px 0 5px 10px;
+  margin: 100px 0 20px 0;
+  
+  width: 1110px;
+  height: auto;
+
+  column-span: all;
 }
 
 .header-52px {
@@ -320,7 +398,6 @@ h2 {
   text-align: center;
 
   top: 273px;
-  left: 165px;
   width: 1110px;
   height: 26px;
 
@@ -329,9 +406,18 @@ h2 {
 
 .raised-section {
   position: relative;
-  padding-top: 200px;
+
+  padding-bottom: 200px;
 
   z-index: 1;
+}
+
+footer {
+  position: relative;
+}
+
+.footer-section {
+  padding: 55px;
 }
 
 .hello {
