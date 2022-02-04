@@ -31,13 +31,13 @@
     <nav class="flex-container">
     <div class="flex-row">
     <div class="fake-card"><p class="header-52px">5 когнитивных искажений о существовании которых стоит помнить</p></div>
-    <div class="card"><a href="#ikea-effect">
+    <div class="card"><a href="#ikea-effect" class="special-a">
         <p class="card-number">1</p>
         <p class="card-header">Эффект ИКЕА</p>
         <p class="card-text">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
     </a>
     </div> 
-    <div class="card"><a href="#premature-optimization">
+    <div class="card"><a href="#premature-optimization" class="special-a">
         <p class="card-number">2</p>
         <p class="card-header">Преждевременная оптимизация</p>
         <p class="card-text">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
@@ -45,19 +45,19 @@
     </div>
     </div>
     <div class="flex-row">
-    <div class="card"><a href="#novelty-distortion">
+    <div class="card"><a href="#novelty-distortion" class="special-a">
         <p class="card-number">3</p>
         <p class="card-header">Искажение новизны</p>
         <p class="card-text">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
     </a>
     </div>
-    <div class="card"><a href="#hyperbolic-discounting">
+    <div class="card"><a href="#hyperbolic-discounting" class="special-a">
         <p class="card-number">4</p>
         <p class="card-header">Гиперболическое обесценивание</p>
         <p class="card-text">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
     </a>
     </div>
-    <div class="card"><a href="#planning-error">
+    <div class="card"><a href="#planning-error" class="special-a">
         <p class="card-number">5</p>
         <p class="card-header">Ошибка планирования</p>
         <p class="card-text">Неправильно рассчитывать время необходимое для завершения задачи.</p>
@@ -67,7 +67,7 @@
 </nav>
     </div>
 </section>
-<section class="rubric-section white-background image-background" id="ikea-effect">
+<section class="white-background" id="ikea-effect">
     <div class="content-part">
     <div class="two-columns">
     <img src="assets/1.png" alt="Рисунок когнитивные искажения в программировании" class="rubric-img shadow">
@@ -84,7 +84,7 @@
     </div>
     </div>
 </section>
-<section class="rubric-section brown-background image-background" id="premature-optimization">
+<section class="brown-background" id="premature-optimization">
     <div class="content-part">
     <div class="two-columns">
         <p class="rubric-title text-white">Когнитивные искажения</p>
@@ -99,7 +99,7 @@
     </div>
     </div>
 </section>
-<section class="rubric-section white-background image-background" id="novelty-distortion">
+<section class="white-background" id="novelty-distortion">
     <div class="content-part">
     <div class="two-columns">
     <img src="assets/3.png" alt="Рисунок когнитивные искажения в программировании" class="rubric-img shadow">
@@ -116,7 +116,7 @@
     </div>
     </div>
 </section>
-<section class="rubric-section brown-background image-background" id="hyperbolic-discounting">
+<section class="brown-background" id="hyperbolic-discounting">
     <div class="content-part">
     <div class="two-columns">
         <p class="rubric-title text-white">Когнитивные искажения</p>
@@ -131,7 +131,7 @@
     </div>
     </div>
 </section>
-<section class="rubric-section white-background image-background" id="planning-error">
+<section class="white-background" id="planning-error">
     <div class="content-part">
     <div class="two-columns">
     <img src="assets/5.png" alt="Рисунок когнитивные искажения в программировании" class="rubric-img shadow">
@@ -149,24 +149,22 @@
     </div>
     </div>
 </section>
-<footer class="white-background">
-    <div class="content-part">
+<footer>
+    <div class="no-image-background content-part">
     <div class="footer-section primary-dark-background two-columns">
-        <div class="rubric-lead text-white">Хотите узнать больше? <br>Подпишитесь на обновления</div>
-        <div>
+        <div class="rubric-lead text-white footer-subscribe">Хотите узнать больше? <br>Подпишитесь на обновления</div>
+        <div class="email-form">
             <p class="opensans-18px text-white">Электронная почта</p>
-            <div>
                 <form action="/my-handling-form-page" method="post">
                     <input type="email" value="Ваша электронная почта">
                 </form>
                 <button class="submission-form"></button>
-                <p class="opensans-12px text-white">Подписываясь, вы принимаете правила сервиса</p>
-            </div>
+                <p class="opensans-12px text-white">Подписываясь, вы принимаете <a href="" class="footer-a">правила сервиса</a></p>
         </div>
     </div>
     <p class="opensans-14px">© 2020 Константин Константинопольский</p>
-    <p class="opensans-14px">По материалам статьи Yash Ranadive Cognitive Biases in Programming</p>
-    <p class="opensans-14px">Курсы программирования Hexlet</p>
+    <p class="opensans-14px">По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+    <p class="opensans-14px"><a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a></p>
     </div>
 </footer>
 </main>
