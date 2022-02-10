@@ -35,7 +35,7 @@
 
 .img-background::before {
   position: absolute;
-  top: -100px;
+  top: 0;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +113,7 @@
 }
 
 iframe {
-  position: absolute;
+  position: relative;
   left: 96px;
   top: 229px;
 
@@ -126,9 +126,8 @@ iframe {
 
 .flex-container {
   position: absolute;
-  top: 200px;
 
-  margin-bottom: 100px;
+  margin: 100px 0 0 0;
 }
 
 .flex-row {
@@ -139,8 +138,9 @@ iframe {
 }
 
 .card {
-  width: 350px;
-  height: 323px;
+  width: 302px;
+  min-height: 299px;
+  max-height: 300px;
   padding: 24px;
   margin: 20px 30px 0 0;
 
@@ -150,7 +150,6 @@ iframe {
 .fake-card {
   width: 350px;
   height: 323px;
-  padding: 24px;
   margin: 20px 30px 0 0;
 
   font-family: 'Neucha-Regular', sans-serif;
@@ -180,6 +179,7 @@ iframe {
   font-family: 'Neucha-Regular', sans-serif;
   font-size: 34px;
   line-height: 1.2em;
+  margin-bottom: 0;
 
   color:#FE8A02;
 }
@@ -268,18 +268,18 @@ section {
   
   display: block;
   width: 100vw;
-  min-height: 760px;
   padding: 100px 0;
   margin: 0 auto;
 }
 
 .content-part {
-  position: absolute;
-  left: 165px;
-
   display: block;
   max-width: 1110px;
-  margin: 0 auto;
+  margin: 0 auto 0 165px;
+}
+
+.position-absolute {
+  position: absolute;
 }
 
 button {
@@ -317,6 +317,7 @@ h1 {
   margin: 0;
 
   font-family: 'Neucha-Regular', sans-serif;
+  font-weight: 400;
   font-size: 72px;
   line-height: 1.2em;
   white-space: nowrap;
@@ -329,6 +330,7 @@ h2 {
   margin: 0 0 30px 0;
 
   font-family: 'Neucha-Regular', sans-serif;
+  font-weight: 400;
   font-size: 60px;
   line-height: 1.2em;
 }
@@ -383,11 +385,14 @@ h3 {
 
 .raised-section {
   position: relative;
-  top: -200px;
 
-  min-height: 991px;
+  min-height: 891px;
 
   z-index: 1;
+}
+
+.short-section {
+  min-height: 614px;
 }
 
 footer {
