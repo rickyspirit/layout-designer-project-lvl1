@@ -12,7 +12,7 @@
 .white-background {
   width: 100vw;
 
-  background-color: #E5E5E5;
+  background-color: #F5F4F0;
 }
 
 .brown-background {
@@ -216,12 +216,13 @@ iframe {
   margin: 0;
 }
 
-.avoid-break {
-  break-inside: avoid;
+.two-columns-flex {
+  display: flex;
+  flex-direction: row;
 }
 
-.rubric-aside {
-  padding-left: 30px;
+.avoid-break {
+  break-inside: avoid;
 }
 
 .rubric-img {
@@ -229,6 +230,10 @@ iframe {
   width: 578px;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.rubric-aside {
+  margin-left: 30px;
 }
 
 .header-text-1 {
