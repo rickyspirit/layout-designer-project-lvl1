@@ -399,8 +399,7 @@ footer {
   position: relative;
 
   width: 100vw;
-  min-height: 581px;
-  margin-top: 100px;
+  padding: 100px 0;
 
   background: #FFFFFF;
 }
@@ -410,7 +409,7 @@ footer {
 
   width: 1100px;
   min-height: 190px;
-  margin-top: 100px;
+  margin-bottom: 76px;
 }
 
 .footer-subscribe {
