@@ -12,7 +12,7 @@
 .white-background {
   width: 100vw;
 
-  background-color: #fff;
+  background-color: #E5E5E5;
 }
 
 .brown-background {
@@ -333,6 +333,8 @@ h2 {
   font-weight: 400;
   font-size: 60px;
   line-height: 1.2em;
+
+  color: #FE8A02;
 }
 
 .middle-header {
