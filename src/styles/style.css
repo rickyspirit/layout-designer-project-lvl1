@@ -58,10 +58,6 @@
   color: #FFFFFF;
 }
 
-.text-grey {
-  color: #D7CCC0;
-}
-
 .text-orange {
   color: #FE8A02;
 }
@@ -72,6 +68,14 @@
 
 .text-brown {
   color: #B09A81;
+}
+
+#rubric-title-light {
+  color: #D7CCC0;
+}
+
+#rubric-title-grey {
+  color: #908D8B;
 }
 
 .regular-text {
@@ -85,6 +89,7 @@
 
   font-family: 'Neucha-Regular', sans-serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 28.8px;
 }
 
@@ -137,12 +142,12 @@ iframe {
   flex-direction: row;
   flex-wrap: nowrap;
   align-self: flex-start;
+  align-items: stretch;
 }
 
 .card {
   width: 302px;
-  min-height: 299px;
-  max-height: 300px;
+
   padding: 24px;
   margin: 20px 30px 0 0;
 
@@ -191,11 +196,17 @@ iframe {
 }
 
 .card-text {
+  margin-bottom: 0;
+
   font-family: 'OpenSans-Regular', sans-serif;
   font-size: 16px;
   line-height: 1.6em;
 
   color: #2A2626;
+}
+
+#small-margin-top {
+  margin-top: 12px;
 }
 
 .card:hover .card-text {
