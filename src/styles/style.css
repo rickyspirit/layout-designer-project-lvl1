@@ -58,7 +58,7 @@
 }
 
 .text-white {
-  color: #ffffff;
+  color: #fff;
 }
 
 .text-orange {
@@ -107,8 +107,8 @@
 .opensans-18px {
   padding-top: 38px;
 
-  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 18px;
+  font-family: 'OpenSans-Regular', sans-serif;
 }
 
 .opensans-14px {
@@ -127,10 +127,10 @@ iframe {
   top: 229px;
   left: 96px;
 
+  z-index: 2;
   margin-right: auto;
   margin-left: auto;
 
-  z-index: 2;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
@@ -176,13 +176,12 @@ iframe {
 
   font-size: 64px;
   font-family: 'Neucha-Regular', sans-serif;
-  line-height: 1;
-
   color: #42413c;
+  line-height: 1;
 }
 
 .card:hover .card-number {
-  color: #ffffff;
+  color: #fff;
 }
 
 .card-header {
@@ -190,21 +189,20 @@ iframe {
 
   font-size: 34px;
   font-family: 'Neucha-Regular', sans-serif;
+  color: #fe8a02;
   line-height: 1.2em;
-
-  color:#fe8a02;
 }
 
 .card:hover .card-header {
-  color: #ffffff;
+  color: #fff;
 }
 
 .card-text {
   margin-bottom: 0;
 
   font-size: 16px;
-  font-family: 'OpenSans-Regular', sans-serif;
   color: #2a2626;
+  font-family: 'OpenSans-Regular', sans-serif;
   line-height: 1.6em;
 }
 
@@ -213,7 +211,7 @@ iframe {
 }
 
 .card:hover .card-text {
-  color: #ffffff;
+  color: #fff;
 }
 
 .special-a {
@@ -221,8 +219,9 @@ iframe {
 }
 
 .two-columns {
-  column-count: 2;
   overflow: hidden;
+
+  column-count: 2;
   column-gap: 30px;
   break-inside: avoid;
 }
@@ -271,7 +270,8 @@ header {
   position: relative;
 
   min-height: 714px;
-  padding: 100px 0; 
+  padding: 100px 0;
+
 }
 
 body {
@@ -285,7 +285,7 @@ body {
 
 section {
   position: relative;
-  
+
   display: block;
   width: 100vw;
   margin: 0 auto;
@@ -324,8 +324,9 @@ button {
   position: absolute;
   top: -45px;
   left: 296px;
- 
+
   z-index: 100;
+
   width: 1082.81px;
   height: 525px;
 }
@@ -333,12 +334,13 @@ button {
 h1 {
   position: absolute;
 
-  z-index: 200; 
+  z-index: 200;
+
   margin: 0;
 
+  font-size: 72px;
   font-weight: 400;
   font-family: 'Neucha-Regular', sans-serif;
-  font-size: 72px;
   line-height: 1.2em;
   white-space: nowrap;
 }
@@ -349,9 +351,8 @@ h2 {
   font-weight: 400;
   font-size: 60px;
   font-family: 'Neucha-Regular', sans-serif;
-  line-height: 1.2em;
-
   color: #fe8a02;
+  line-height: 1.2em;
 }
 
 .middle-header {
@@ -362,8 +363,8 @@ h2 {
   height: 73px;
   margin: 0 auto;
 
-  font-family: 'Neucha-Regular', sans-serif;
   font-size: 60px;
+  font-family: 'Neucha-Regular', sans-serif;
   line-height: 1.2em;
   text-align: center;
 }
@@ -375,8 +376,8 @@ h3 {
   padding: 5px 0 5px 10px;
 
   font-size: 14px;
-  font-family: 'OpenSans-Regular', sans-serif;
   font-weight: 700;
+  font-family: 'OpenSans-Regular', sans-serif;
   line-height: 1.2em;
   text-transform: uppercase;
 
@@ -406,6 +407,7 @@ h3 {
   position: relative;
 
   z-index: 1;
+
   min-height: 791px;
 }
 
@@ -419,7 +421,7 @@ footer {
   width: 100vw;
   padding: 100px 0;
 
-  background: #ffffff;
+  background: #fff;
 }
 
 .footer-section {
